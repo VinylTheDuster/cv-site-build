@@ -248,6 +248,8 @@ p {
 /* modal */
 #modal {
   display: flex;
+  flex-direction: column;
+  gap: 1em;
   justify-content: center;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.312);
@@ -258,6 +260,15 @@ p {
   width: 100vw;
   height: 100vh;
   overflow: auto;
+}
+
+#modal p {
+  background-color: rgba(0, 0, 0, 0.800);
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: center;
 }
 
 #modal img {

@@ -10,6 +10,9 @@ let span = document.getElementById("close");
 // get the image block inside the modal
 let imgBlock = document.getElementById("imgblock");
 
+// get the caption element inside the modal
+let caption = document.getElementById("caption");
+
 // when load, set the modal to not display
 window.onload = (event) => {
     modal.style.display = "none";
@@ -20,6 +23,7 @@ for (let i = 0; i < imgs.length; i++) {
     imgs[i].onclick = function() {
     imgBlock.src = this.src;
     modal.style.display = "flex";
+    caption.textContent = this.alt;
     }
 }
 
