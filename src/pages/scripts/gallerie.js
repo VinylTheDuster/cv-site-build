@@ -21,9 +21,13 @@ window.onload = (event) => {
 // for with function to set the modal images
 for (let i = 0; i < imgs.length; i++) {
     imgs[i].onclick = function() {
+    
+    // set the modal image and caption
     imgBlock.src = this.src;
-    modal.style.display = "flex";
     caption.textContent = this.alt;
+
+    // set the modal to display
+    modal.style.display = "flex";
     }
 }
 

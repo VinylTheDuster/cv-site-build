@@ -1,5 +1,5 @@
 /* fonts */
-@import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wdth,wght@112.5,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wdth,wght@112.5,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Martian+Mono:wdth,wght@112.5,800&display=swap');
 
 
@@ -11,7 +11,7 @@
 .martian-mono-font {
   font-family: "Martian Mono", monospace;
   font-optical-sizing: auto;
-  font-weight: 800;
+  font-weight: 400;
   font-style: normal;
   font-variation-settings:
     "wdth" 112.5;
@@ -42,8 +42,11 @@ body {
 
 header {
   overflow:auto;
-  background: linear-gradient(90deg,rgba(59, 75, 121, 1) 0%, rgba(127, 198, 200, 1) 50%, rgba(246, 212, 120, 1) 100%);
+  background: linear-gradient(90deg,rgba(59, 75, 121, 1) 0%, rgba(127, 198, 200, 1) 50%, rgba(246, 212, 120, 1) 100%), url("../src/assets/bg-header.png"), 50%;
   box-shadow: 0px 0px 200px rgba(0, 0, 0, 0.648);
+  background-blend-mode: lighten;
+  background-size: 100%, 3%;
+  opacity: 1, 0;
 }
 
 h1 {
@@ -87,6 +90,36 @@ p {
     line-height: 1.2em;
     letter-spacing: 0.001%;
   }
+}
+
+/* nav */
+nav {
+  padding: 1em;
+  text-shadow: 1px 1px 0.3em rgb(0, 0, 0);
+  background-color: #242424ae;
+  box-shadow: 0em 0em 3em #242424ae;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+  justify-content: space-between;
+}
+
+.nav-menu {
+  font-family: "Martian Mono", monospace;
+  color: #efeff0;
+}
+
+.nav-menu ul {
+  overflow: hidden;
+}
+
+.nav-menu li {
+  float: left;
+  
+  padding-left: 3em;
 }
 
 /* hero container */
