@@ -16,7 +16,7 @@ Le code source ainsi que le site sont protégés sous licence Creative Commons A
 
 > Mais,
 
-* Vous devez me créditer de manière appropriée, c'est-à-dire, fournir mon nom et prénom ou mon pseudonyme "VinylTheDuster", ainsi qu'un lien pour la licence CC-BY-NC-ND 4.0. Vous devez également de créditer sans que cela ne paraisse que je vous approuve ou approuve l'utilisation que vous en faites.
+* Vous devez me créditer de manière appropriée, c'est-à-dire, fournir mon nom et prénom ou mon pseudonyme "VinylTheDuster", ainsi qu'un lien pour la licence CC-BY-NC-ND 4.0. Vous devez également me créditer sans que cela ne paraisse que je vous approuve ou approuve l'utilisation que vous en faites.
 
 * Vous n'utiliserez pas le contenu du dépôt GitHub à des fins commerciales.
 
