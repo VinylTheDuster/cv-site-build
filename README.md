@@ -1,46 +1,25 @@
-# Astro Starter Kit: Basics
+# Mon site portfolio
 
-```sh
-npm create astro@latest -- --template basics
-```
+## À savoir:
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Ce site est rédigé entièrement en français (les commentaires sont, eux, en anglais). J'utilise le framework Astro et l'extension TailwindCSS pour le moment. J'utilise l'IA seulement pour écrire les commentaires (avec Copilot) et utilise VSCode.
 
-## 🚀 Project Structure
+## But du site:
 
-Inside of your Astro project, you'll see the following folders and files:
+L'objectif est de créer un site CV/Portfolio, afin de présenter mes expériences et travaux actuels. Ce site sera également un portail vers toutes mes autres créations ainsi que le site de mon studio de développement indépendant de jeux vidéo "FERNOIR Studio".
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
-```
+## Droit d'usage:
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+Le code source ainsi que le site sont protégés sous licence Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International. Ce que cela veut dire en gros :
 
-## 🧞 Commands
+* Vous pouvez copier et distribuer mon code source sous tout format et média.
 
-All commands are run from the root of the project, from a terminal:
+> Mais,
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+* Vous devez me créditer de manière appropriée, c'est-à-dire, fournir mon nom et prénom ou mon pseudonyme "VinylTheDuster", ainsi qu'un lien pour la licence CC-BY-NC-ND 4.0. Vous devez également de créditer sans que cela ne paraisse que je vous approuve ou approuve l'utilisation que vous en faites.
 
-## 👀 Want to learn more?
+* Vous n'utiliserez pas le contenu du dépôt GitHub à des fins commerciales.
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+* Vous ne distribuerez pas mon code s'il a été remixer, transformer, et ne republierez pas votre travail si ce dernier s'appuie sur le mien.
+
+Pour plus d'information, rendez-vous ici : https://creativecommons.org/licenses/by-nc-nd/4.0/
