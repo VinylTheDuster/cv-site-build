@@ -49,6 +49,22 @@ header {
   opacity: 1, 0;
 }
 
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: rgb(38, 38, 38);
+  padding-top: 3em;
+}
+
+footer a {
+  color: #f6d478;
+  text-decoration: none;
+  font-weight: 600;
+}
+
 h1 {
   font-family: "Martian Mono", monospace;
   font-size: 3em;
@@ -118,7 +134,6 @@ nav {
 
 .nav-menu li {
   float: left;
-  
   padding-left: 3em;
 }
 
@@ -262,25 +277,107 @@ nav {
   text-align: center;}
 
 /* middle container */
-
 .middle-container {
-  background-color: #3b4b79;
+  display: flex;
+  flex-direction: column;
+  background-color: #3b4b7970;
   margin-top: 5em;
   padding: 3em;
   padding-top: 5em;
-  padding-left: 25%;
-  padding-right: 25%;
+  padding-left: 10%;
+  padding-right: 10%;
+  align-items: center;
 }
 
 .middle-container p {
   text-align: center;
+  padding-left: 25%;
+  padding-right: 25%;
+}
+
+.middle-container h2 {
+  text-align: center;
+  color: #f6d478;
+  font-family: "Martian Mono", monospace;
+  font-size: 2em;
+  font-weight: 800;
+  line-height: 1.2em;
+  letter-spacing: 0.001%;
+}
+
+.middle-info-container {
+  display: flex;
+  margin: 2em;
+  padding: 3em;
+  padding-left: 15%;
+  padding-right: 15%;
+  gap: 2em;
+  align-items: center;
+}
+
+.middle-info-container img {
+  flex: 1;
+  border-radius: 1em;
+  width: 30%;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.137);
+  cursor: pointer;
+}
+
+.middle-info-container p {
+  flex: 1;
+  text-align: center;
+  padding-left: 0%;
+  padding-right: 0%;
+}
+
+.video-container {
+  display: flex;
+  gap: 2em;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4em;
+}
+
+.video-container iframe {
+  border-radius: 1em;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.137);
+}
+
+.video-container p {
+  width: 30%;
+  text-align: left;
+  padding-left: 0%;
+  padding-right: 0%;
+}
+
+#back-to-top {
+  justify-content: center;
+  align-items: middle;
+  width: 15%;
+  margin-top: 2em;
+  padding: 1em;
+  background-color: #f6d478;
+  border-radius: 0.5em;
+  transition: 0.25s;
+  cursor: pointer;
+}
+
+#back-to-top p {
+  padding-left: 0%;
+  padding-right: 0%;
+}
+
+#back-to-top:hover {
+  background-color: #ffcd44;
+  transition: 0.25s;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.137);
 }
 
 /*_-_-_-_-_-_-_-_-_-_-_-_-_*/
 
 /* modal */
 #modal {
-  display: flex;
+  display: none;
   flex-direction: column;
   gap: 1em;
   justify-content: center;
