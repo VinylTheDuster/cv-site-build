@@ -1,17 +1,17 @@
 // get the images in the gallery
-let imgs = document.getElementsByClassName("image-gallery");
+const imgs = document.getElementsByClassName("image-gallery");
 
 // get the modal
-let modal = document.getElementById("modal");
+const modal = document.getElementById("modal");
 
 // get the span element that closes the modal
-let span = document.getElementById("close");
+const span = document.getElementById("close");
 
 // get the image block inside the modal
-let imgBlock = document.getElementById("imgblock");
+const imgBlock = document.getElementById("imgblock");
 
 // get the caption element inside the modal
-let caption = document.getElementById("caption");
+const caption = document.getElementById("caption");
 
 // when load, set the modal to not display
 window.onload = (event) => {
