@@ -119,6 +119,103 @@ p {
 }
 
 /* acceuil style */
+.home-main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 5em;
+  padding-bottom: 2em;
+  background-color: #3b4b7976;
+}
+
+.home-main-container h2 {
+  font-family: "Martian Mono", monospace;
+  font-size: 1.5em;
+  font-weight: 800;
+  line-height: 1.2em;
+  letter-spacing: 0.001%;
+  color: #efeff0;
+  padding: 0.5em;
+  width: 70%;
+  background: linear-gradient(90deg,rgba(42, 40, 45, 0) 0%, rgba(59, 75, 121, 0.65) 25%, rgba(59, 75, 121, 0.65) 75%, rgba(42, 40, 45, 0) 100%);
+}
+
+.home-main-container h3 {
+  font-family: "Martian Mono", monospace;
+  font-size: 1.25em;
+  font-weight: 800;
+  line-height: 1.2em;
+  letter-spacing: 0.001%;
+  color: #ffe293;
+  padding: 0.5em;
+}
+
+/* home skill container */
+.home-skills-container {
+  display: flex;
+  flex-direction: row;
+  align-items: top;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 2em;
+  gap: 2em;
+  width: 50%;
+}
+
+.home-skills-container h3 {
+  padding-bottom: 2em;
+}
+
+.home-skills-container ul {
+  list-style-type: none;
+  padding-left: 0;
+  color: #efeff0;
+}
+
+.home-skills-container li {
+  display: flex;
+  align-items: center;
+  font-family: "Funnel Sans", sans-serif;
+  font-size: 1.1em;
+  padding: 0.5em;
+  line-height: 1.8em;
+}
+
+.home-skills-container li img {
+  justify-self: start;
+  padding-right: 1em;
+}
+
+.home-skills-container li b {
+  justify-self: start;
+}
+
+.home-skills-container li span {
+  flex: 3;
+  text-align: end;
+  justify-self: end;
+}
+
+.skills-item {
+  background-color: #3b4b79;
+  background: linear-gradient(90deg,rgba(42, 40, 45, 0) 0%, rgba(59, 75, 121, 0.65) 25%, rgba(59, 75, 121, 0.65) 75%, rgba(42, 40, 45, 0) 100%);
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left: 2%;
+  padding-right: 2%;
+  margin-bottom: 2em;
+  width: 100%;
+}
+
+.skills-item b {
+  font-weight: 800;
+  margin-right: 3em;
+  color: #f6d478;
+}
+
+/* home software grid */
 .home-software-grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -155,6 +252,7 @@ p {
 
 .home-software-item p {
   text-align: center;
+  text-shadow: #000000 1px 1px 0.15em;
   background-color: #8AC2B9;
   font-size: 1em;
   padding: 1em;
