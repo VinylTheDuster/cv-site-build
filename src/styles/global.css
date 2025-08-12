@@ -1,3 +1,5 @@
+/* Merci à Aurélie, la femme de ma vie, qui m'à aider avec les couleurs et le rendement visuel de ce site, je t'aime infiniment et tu es tout pour moi mon amour */
+
 /* fonts */
 @import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wdth,wght@112.5,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Martian+Mono:wdth,wght@112.5,800&display=swap');
@@ -5,7 +7,6 @@
 
 /* tailwindcss */
 @import "tailwindcss";
-
 
 /* fonts applying */
 .martian-mono-font {
@@ -705,6 +706,46 @@ nav {
     padding-right: 0%;
     text-align: center;
   }
+}
+
+/* contact section */
+
+#form-section {
+  display: flex;
+  padding-top: 5em;
+  justify-content: center;
+  background-color: #3b4b7976;
+}
+
+#form-section form {
+  padding: 3em;
+  background-color: #3b4b7976;
+}
+
+#form-section label {
+  font-family: "Funnel Sans", sans-serif;
+  font-size: 1.5em;
+  text-shadow: 1px 1px 0.3em #000000;
+  color:#efeff0;
+}
+
+.form-item {
+  display: flex;
+  margin: 1em;
+}
+
+textarea, input {
+  background-color: white;
+  border-radius: 0.5em;
+  box-shadow: 1px 1px 0.6em #000000;
+  font-family: "Funnel Sans", sans-serif;
+  font-size: 1.2em;
+  color: #000000;
+}
+
+textarea:hover {
+  color: #232323;
+  transition-duration: 0.3s;
 }
 
 /*_-_-_-_-_-_-_-_-_-_-_-_-_*/

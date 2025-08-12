@@ -1,0 +1,19 @@
+---
+import Hero from '../components/Hero.astro';
+import ContactLayout from '../layouts/ContactLayout.astro';
+import Layout from '../layouts/Layout.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+import "../styles/global.css";
+---
+
+<Layout>
+	<header>
+		<Nav />
+		<Hero />
+	</header>
+
+	<ContactLayout />
+	
+	<Footer />
+</Layout>
