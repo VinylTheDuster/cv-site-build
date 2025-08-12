@@ -62,18 +62,29 @@ header {
 
 footer {
   display: flex;
-  flex-direction: row;
   justify-content: center;
-  align-items: center;
-  text-align: center;
   background: rgb(38, 38, 38);
-  padding-top: 3em;
+  text-align: center;
+  padding-top: 5em;
+  padding-bottom: 10em;
+}
+
+footer span {
+  padding-left: 0.4em;
+  padding-right: 0.4em;
 }
 
 footer a {
   color: #f6d478;
   text-decoration: none;
   font-weight: 600;
+  padding-left: 0.4em;
+  padding-right: 0.4em;
+}
+
+footer p {
+  display: flex;
+  align-items: center;
 }
 
 h1 {
@@ -713,6 +724,7 @@ nav {
 #form-section {
   display: flex;
   padding-top: 5em;
+  padding-bottom: 5em;
   justify-content: center;
   background-color: #3b4b7976;
 }
@@ -720,18 +732,62 @@ nav {
 #form-section form {
   padding: 3em;
   background-color: #3b4b7976;
+  border-radius: 2em;
+}
+
+#form-section form h2 {
+  color: #f6d478;
+  text-align: center;
+}
+
+#form-section form p {
+  text-align: center;
+  font-style: italic;
+  font-size: 0.8em;
 }
 
 #form-section label {
   font-family: "Funnel Sans", sans-serif;
-  font-size: 1.5em;
+  font-size: 1.2em;
   text-shadow: 1px 1px 0.3em #000000;
   color:#efeff0;
 }
 
-.form-item {
+#form-section button {
+  background-color: #f6d478;
+  border-radius: 1em;
+  transition-duration: 0.8s;
+  cursor: pointer;
+  padding: 1em;
+  font-family: "Funnel Sans", sans-serif;
+  font-weight: 400;
+  margin-top: 2em;
+}
+
+#form-section button p {
+  text-align: center;
+  font-style: normal;
+  font-size: 1.2em;
+}
+
+#form-section button:hover {
+  background-color: #ffcd44;
+  box-shadow: 0.3em 0.3em 1em #0000007b;
+}
+
+#contact-form {
   display: flex;
-  margin: 1em;
+  flex-direction: column;
+  width: 25%;
+  align-items: middle;
+  justify-content: center;
+}
+
+.form-item {
+  display: grid;
+  grid-template: "a b" auto;
+  margin: 1.5em;
+  width: 90%;
 }
 
 textarea, input {
@@ -741,11 +797,13 @@ textarea, input {
   font-family: "Funnel Sans", sans-serif;
   font-size: 1.2em;
   color: #000000;
+  transition-duration: 0.3s;
+  padding: 0.5em;
+  width: 100%;
 }
 
-textarea:hover {
-  color: #232323;
-  transition-duration: 0.3s;
+textarea:hover, input:hover {
+  box-shadow: 1px 1px 0.6em #535353;
 }
 
 /*_-_-_-_-_-_-_-_-_-_-_-_-_*/
