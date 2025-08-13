@@ -1,3 +1,5 @@
+import.meta.env.PUBLIC_EMAILJS_SERVICE
+
 document.addEventListener("DOMContentLoaded", () => {
     const form = document.getElementById("contact-form");
 
@@ -18,7 +20,7 @@ function handleSubmit(event) {
     };
 
     // allows to send an email via the emailjs api
-    emailjs.send("service_li7b184", "template_9qyu0ao", parameters)
+    emailjs.send(import.meta.env.PUBLIC_EMAILJS_SERVICE, import.meta.env.PUBLIC_EMAILJS_TEMPLATE, parameters)
         .then(() => alert("Email envoyé avec succès."))
         .catch((error) => {
             console.error("Erreur EmailJS :", error);
