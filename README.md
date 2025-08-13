@@ -10,7 +10,7 @@ L'objectif est de créer un site CV/Portfolio, afin de présenter mes expérienc
 
 ## Droit d'usage:
 
-Le code source ainsi que le site sont protégés sous licence Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International. Ce que cela veut dire en gros :
+Le code source (hors librairies et framework Astro) ainsi que le site sont protégés sous licence Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International. Ce que cela veut dire en gros :
 
 * Vous pouvez copier et distribuer mon code source sous tout format et média.
 
