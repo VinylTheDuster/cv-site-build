@@ -20,12 +20,14 @@ document.querySelectorAll("a.nav-button-links").forEach(link => {
 window.addEventListener("resize", checkWidth);
 
 function checkWidth(){
-    if (window.innerWidth <= 1200) {
+    if (window.innerWidth <= 1200 && !hambuga.classList.contains("open")) {
         hambuga.style.display = "block";
         btnNav.style.display = "none";
     } else {
         hambuga.style.display = "none";
+        hambuga.classList.remove("open")
         btnNav.style.display = "block";
+        btnNav.classList.remove("fade-in")
     }
 };
 
