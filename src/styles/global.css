@@ -238,16 +238,45 @@ p {
   }
 
   .home-skills-container {
-  display: flex;
-  flex-direction: row;
-  align-items: top;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin: 1em;
-  margin-bottom: 6.5em;
-  gap: 2em;
-  width: 100%;
-}  
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 1em;
+    margin-bottom: 6.5em;
+    gap: 2em;
+    width: 100%;
+  }
+
+  .home-skills-container li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Funnel Sans", sans-serif;
+    font-size: 1.1em;
+    padding: 0.5em;
+    line-height: 1.8em;
+  }
+
+  .home-skills-container li img {
+    justify-self: center;
+    padding-right: 0em;
+  }
+
+  .home-skills-container li b {
+    justify-self: center;
+  }
+
+  .home-skills-container li span {
+    flex: 3;
+    text-align: center;
+    justify-self: center;
+  }
+
+  .skills-item b {
+    margin-right: 0em;
+  }
 }
 
 /* home software grid */
@@ -637,6 +666,7 @@ nav {
     margin-bottom: 2em;
     margin-left: 1%;
     margin-right: 1%;
+    font-size: 0.8em;
   }
 }
 
@@ -684,7 +714,6 @@ nav {
   .info-container p {
     font-size: 3.5vw;
   }
-
 }
 
 .info-text {
@@ -836,7 +865,7 @@ nav {
   justify-content: center;
   align-items: middle;
   width: 15%;
-  margin-top: 2em;
+  margin-top: 4em;
   padding: 1em;
   background-color: #f6d478;
   border-radius: 0.5em;
@@ -893,9 +922,10 @@ nav {
 
 #project-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2em;
   width: 50%;
-  
+  margin-bottom: 5em;
 }
 
 .project-container h2 {
@@ -904,9 +934,14 @@ nav {
 }
 
 .project-item {
+  display: flex;
+  flex-direction: column;
+  animation: 0.5s ease-out 0s 1 fadeIn;
   background-color: #3b4b79;
-  width: 85%;
+  width: 100%;
   justify-self: center;
+  justify-items: center;
+  align-items: center;
   border-radius: 1em 1em 1em 1em;
   transition: all 0.4s ease-in;
 }
@@ -921,6 +956,7 @@ nav {
 .project-item h2 {
   font-size: 1em;
   background-color: #f6d478;
+  width: 100%;
   color:#3b4b79;
   padding-top: 1em;
 }
@@ -934,6 +970,47 @@ nav {
   transform: scale(1.05);
   transition: all 0.25s;
   box-shadow: 0.2em 0.2em 3em #00000070;
+}
+
+.project-item a {
+  font-family: "Funnel Sans", sans-serif;
+  font-weight: 800;
+  color: #3b4b79;
+  font-size: 0.9em;
+  background-color: #f6d478;
+  border-radius: 1em;
+  padding: 1em;
+  margin-top: auto;
+  margin-bottom: 1em;
+  width: fit-content;
+  transition: all 0.1s ease-in-out;
+}
+
+.project-item a:hover {
+  background-color: #ffcd44;
+  box-shadow: 1px 1px 1em #000000;
+  cursor: pointer;
+}
+
+@media (max-width: 700px) {
+  #project-grid {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (min-width: 700px) and (max-width: 1000px) {
+  #project-grid {
+    width: 90%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1800px) {
+  #project-grid {
+    width: 80%;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 /* contact section */
