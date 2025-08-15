@@ -15,11 +15,11 @@ async function initializeModule(){
 
     // in the event of any error on the part of Supabase
     if (error) {
-        alert('Erreur Supabase :', error.message)
+        console.warn('Erreur Supabase :', error.message)
     }
 
     if (!projects || !projects.length) {
-        alert('Aucun contenu trouvé dans Supabase')
+        console.warn('Aucun contenu trouvé dans Supabase')
     }
 
     // loop in the rows of the “projects” table
